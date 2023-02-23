@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+</body>
+<script>
+    var array=["mango","apple","grape","kiwi"];
+     array.sort();
+     array.reverse();
+     document.getElementById("demo").innerHTML=array;
+    var len=array.length;
+    document.getElementById("demo").innerHTML=len;
+
+    var i=0;
+    var text="";
+    for(i=0;i<len;i++)
+    {
+        text+=array[i]+"<br>";
+    }
+    document.getElementById("demo").innerHTML=text;
+array2=["cat","dog","bird","animal"];
+array2.push("fish");
+array2.pop();
+document.getElementById("demo").innerHTML=array2;
+
+const fruits=["mango","apple","grape","kiwi"];
+document.getElementById("demo").innerHTML=fruits.slice(0,2);
+
+fruits[0]="papaya";
+
+document.getElementById("demo1").innerHTML=fruits;
+
+document.getElementById("demo").innerHTML=fruits.toString();
+
+document.getElementById("demo").innerHTML=fruits.join("*");
+document.getElementById("demo").innerHTML=fruits.concat("melon");
+
+</script>
+</html>
